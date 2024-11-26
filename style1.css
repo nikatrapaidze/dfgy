@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f8fc;
+    color: #333;
+    background-color: #333;
+}
+
+/* კონტეინერი */
+.container {
+    width: 85%;
+    margin: auto;
+    max-width: 1300px;
+    background-color: #666;
+}
+
+/* ნავიგაცია */
+header {
+    background: #111;
+    color: #fff;
+    padding: 1.5em 0;
+    text-align: center;
+    border-bottom: 2px solid rgb(62, 22, 100);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: purple
+}
+
+/* პროდუქტების სექცია */
+.products {
+    padding: 4em 0;
+    text-align: center;
+    background-color: #fff;
+    margin-top: 2em;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.products h2 {
+    font-size: 2.4em;
+    margin-bottom: 1em;
+    color: #333;
+    font-weight: 600;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+
+.product-item {
+    width: 30%;
+    background: #fff;
+    padding: 1.5em;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+}
+
+.product-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.4s ease;
+}
+
+.product-item:hover img {
+    transform: scale(1.05);
+}
+
+.product-item h3 {
+    margin: 1em 0 0.5em;
+    font-size: 1.4em;
+    color:blueviolet;
+    font-weight: 600;
+}
+
+.product-item p {
+    color: #666;
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+/* ღილაკები */
+button {
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    color: #fff;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: #d81b60;
+}
+
+/* ქვედა ნაწილი */
+footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 1.5em 0;
+    border-top: 2px solid #e91e63;
+    margin-top: 3em;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* მედიაკითხვა მობილურისთვის */
+@media (max-width: 768px) {
+    .product-grid {
+        flex-direction: column;
+    }
+
+    .product-item {
+        width: 100%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0.5em 0;
+    }
+}
+.search-bar {
+    background-color: #f1f1f1;
+    padding: 1em 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.search-bar input[type="text"] {
+    padding: 0.7em;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search-bar input[type="text"]:focus {
+    border-color: #e91e63;
+}
+
+.search-bar button {
+    padding: 0.7em 1em;
+    font-size: 1em;
+    color: #fff;
+    background-color:rgb(58, 58, 90)
+    
+}
+    .search-bar button:hover {
+        background-color:rgb(26, 26, 94)
+    }
+
+
+search-container {
+    position: fixed;
+    top: 20px; /* აიწევს ზემოთ */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 25px;
+    padding: 10px;}
